@@ -8,7 +8,7 @@ let mainWindow
 
 app.setName('Mark')
 
-function createWindow(){
+function createWindow () {
     mainWindow = new BrowserWindow({
         width: 1000, 
         height: 600,
@@ -24,7 +24,7 @@ function createWindow(){
     })
     createAppMenu()
 }
-function createAppMenu(){
+function createAppMenu () {
     let menu = new Menu()
     let template = require('./scripts/menu.js')
     menu = Menu.buildFromTemplate(template)
